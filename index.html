@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-mood="night">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dipak Roy | One-Sided Love - My Untold Story</title>
+  <meta name="description"
+    content="This is the story of the love I never confessed, the memories I couldn't forget, and the heart that kept hoping in silence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <div id="particle-field"></div>
+
+  <nav class="site-nav">
+    <a href="index.html" class="brand">Dipak Roy<small>Letters Never Sent</small></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="diary.html">Diary</a></li>
+      <li><a href="quotes.html">Quotes</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="memories.html">Memories</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="mood-toggle" title="Toggle day / night" aria-label="Toggle mood">☾</button>
+      <button class="music-toggle" title="Toggle ambient sound" aria-label="Toggle music"
+        aria-pressed="false">♪</button>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow hero-kicker">My One-Sided Love</p>
+          <h1>You became the most beautiful chapter, of my life...<em>without ever knowing you were in my story...</em>
+          </h1>
+          <p class="lede">This website isn't here to make anyone feel guilty,
+            nor is it written to ask for love in return.
+            <BR></BR>
+            It's simply the place where I collected every smile,
+            every memory, every late-night thought,
+            and every word I never had the courage to say.
+            <br><br>
+            Maybe one day these pages will help me let go.
+            Until then, this is where my heart lives.
+          </p>
+          <div class="hero-actions">
+            <a href="diary.html" class="btn btn-primary">Read My Story</a>
+            <a href="about.html" class="btn btn-ghost">About My Journey</a>
+          </div>
+        </div>
+
+        <div class="letter" data-reveal>
+          <div class="letter-head">
+            <span>Private Letter — Never Sent</span>
+            <span id="today-date"></span>
+          </div>
+          <div class="author-photo">
+            <img src="assets/images/profile/Dipak.jpeg" alt="Dipak Roy">
+          </div>
+          <div class="letter-body"
+            data-typing='["I still remember the first day I saw you.","I never expected one smile could stay in my heart for years.","I wanted to tell you everything... but silence became my habit.","You never promised me anything, yet I kept waiting."]'>
+          </div>
+          <p class="letter-sign">— Dipak Roy</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">My Journey</p>
+          <h2>A Story That Never Began...
+            Yet Never Truly Ended</h2>
+          <p>Not every love story reaches a happy ending.
+            Some remain unfinished,
+            living forever inside one heart.</p>
+        </div>
+        <div class="card-grid">
+          <div class="card" data-reveal>
+            <span class="num">01</span>
+            <h3>The Beginning</h3>
+            <p>The day I first saw you,
+              everything changed without either of us knowing.</p>
+          </div>
+          <div class="card" data-reveal data-reveal-delay="1">
+            <span class="num">02</span>
+            <h3>Silent Love</h3>
+            <p>Every smile became my happiness,
+              even when it wasn't meant for me.</p>
+          </div>
+          <div class="card" data-reveal data-reveal-delay="2">
+            <span class="num">03</span>
+            <h3>Memories</h3>
+            <p>Time moved on,
+              but some memories chose to stay forever.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">My Diary</p>
+          <h2>Pages From My Heart</h2>
+        </div>
+        <div class="timeline" data-timeline></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Dipak Roy • Every word came from my heart.</span>
+    <span>"Some people become memories long before they become strangers."</span>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/typing.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/music.js"></script>
+  <script>
+    document.getElementById('today-date').textContent =
+      new Date().toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' });
+  </script>
+</body>
+
+</html>
